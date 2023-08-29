@@ -3,3 +3,14 @@
   line-height: 1.5;
   font-weight: 400;
 }
+
+.leaflet-container {
+  height: 60vh;
+  width: 100%;
+}
+/* .mapview-container {
+  text-align: center;
+} */
+.mapview-container-header {
+  text-align: center;
+}
