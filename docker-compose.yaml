@@ -1,0 +1,13 @@
+version: "3.4"
+services:
+  leaflet-app:
+    build: .
+    container_name: leaflet-app
+    working_dir: /src/app
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/src/app
+      - /src/app/node_modules
+    stdin_open: true
+    tty: true
