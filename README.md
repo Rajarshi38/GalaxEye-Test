@@ -23,7 +23,7 @@ The technologies which are used:
 - Vite - version 4
 - react-leaflet - version 4.2.1
 
-As the problem statement inclueded to add docker-compose setup, I have created the required `dockerfile` and `docker-compose.yaml` for this. So to test the code, go to the terminal run `docker-compose build` and it will automatically install all the required packages for us. After that run `docker-compose up` to run the server.
+As the problem statement inclueded to add docker-compose setup, I have created the required `dockerfile` and `docker-compose.yaml` for this. So to test the code, go to the terminal run `docker-compose build` and it will automatically install all the required packages for us. After that run `docker-compose up` to run the server at `port: 3000`.
 
 ### Approach and Explanation
 
