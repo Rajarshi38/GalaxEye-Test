@@ -23,7 +23,9 @@ The technologies which are used:
 - Vite - version 4
 - react-leaflet - version 4.2.1
 
-As the problem statement inclueded to add docker-compose setup, I have created the required `dockerfile` and `docker-compose.yaml` for this. So to test the code, go to the terminal run `docker-compose build` and it will automatically install all the required packages for us. After that run `docker-compose up` to run the server at `port: 3000`.
+To start the project first clone it from github then, As the problem statement inclueded to add docker-compose setup, I have created the required `dockerfile` and `docker-compose.yaml` for this. So to test the code, go to the terminal run `docker-compose build` or `docker compose build` and it will automatically install all the required packages for us. After that run `docker-compose up` or `docker compose up` to run the server at `port: 3000`.
+
+If you want to access the files inside docker then run `docker exec -it leaflet-app sh`
 
 ### Approach and Explanation
 
@@ -38,3 +40,8 @@ As we can see on the above picture right corner there are 5 icons, the first 3 a
 ![Alt text](image-2.png)
 
 As we can see when we mark a region which is in blue color, the red tiles are appearing which are intersecting tiles. Clicking on the blue mark will show us `Area of Interest` and clicking on the red mark will show us `This is a intersecting tile`
+
+### Possible errors that could come
+
+- One error could come related to vite and permission denied. We can delete our local node_modules if any then again run `docker-compose build` or `docker compose build` whatever and `docker compose up` or `docker-compose up`.
+- Any other error could come if we have not setup docker properly to use it without sudo. Then you have to run the `docker compose` with `sudo`.
