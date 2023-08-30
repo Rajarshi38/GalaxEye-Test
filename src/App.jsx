@@ -1,9 +1,12 @@
-import MapView from "./Components/MapView";
+// import MapView from "./Components/MapView";
 import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import IntersectContextProvider from "./IntersectContext";
-import { Fragment } from "react";
+import { Fragment, lazy, Suspense } from "react";
 import { useIntersections } from "./hooks/useIntersections";
+import Loader from "./Components/Loader";
+
+const Mapview = lazy(() => import("./Components/MapView"));
 
 function App() {
   return (
@@ -45,7 +48,17 @@ const Home = () => {
         <span data-info="initial">Draw your area of interest</span>
       )}
       <div className="mapview__container">
-        <MapView />
+        <Suspense
+          fallback={
+            <Loader
+              customStyle={{
+                marginTop: "23px",
+              }}
+            />
+          }
+        >
+          <Mapview />
+        </Suspense>
       </div>
     </Fragment>
   );
