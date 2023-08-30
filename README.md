@@ -23,7 +23,9 @@ The technologies which are used:
 - Vite - version 4
 - react-leaflet - version 4.2.1
 
-To start the project first clone it from github then, As the problem statement inclueded to add docker-compose setup, I have created the required `dockerfile` and `docker-compose.yaml` for this. So to test the code, go to the terminal run `docker-compose build` or `docker compose build` and it will automatically install all the required packages for us. After that run `docker-compose up` or `docker compose up` to run the server at `port: 3000`.
+  **P.S - Dont do `npm install` locally**
+
+  To start the project first clone it from github then, As the problem statement inclueded to add docker-compose setup, I have created the required `dockerfile` and `docker-compose.yaml` for this. So to run and test the project, go to the terminal run `docker-compose build` or `docker compose build` and it will automatically install all the required packages for us. After that run `docker-compose up` or `docker compose up` to run the server at `port: 3000`.
 
 If you want to access the files inside docker then run `docker exec -it leaflet-app sh`
 
