@@ -1,1 +1,1 @@
-export const startingPosition = [15.317277, 75.71389];
+export const startingPosition = [17.38714, 78.491684];

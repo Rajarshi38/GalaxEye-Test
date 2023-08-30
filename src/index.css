@@ -7,10 +7,60 @@
 .leaflet-container {
   height: 60vh;
   width: 100%;
+  max-width: 1500px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 20px #bbb;
+  margin: 10px 0;
 }
-/* .mapview-container {
+.container {
   text-align: center;
-} */
-.mapview-container-header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__tiles__count__info {
+  font-weight: bold;
+  color: #e3345d;
+  font-size: 14px;
+}
+
+.container__about {
+  font-size: 14px;
+}
+
+.container__important__note h4 {
+  margin: 0 auto;
+}
+.container__important__note {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 720px) {
+  .container__about {
+    font-size: 16px;
+  }
+  .container__important__note {
+    max-width: 560px;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .container__important__note {
+    max-width: 960px;
+  }
+}
+.container__header {
   text-align: center;
+}
+.mapview__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container span[data-info="initial"] {
+  font-size: 14px;
 }
