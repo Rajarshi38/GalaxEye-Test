@@ -1,4 +1,3 @@
-// import MapView from "./Components/MapView";
 import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import IntersectContextProvider from "./IntersectContext";
@@ -29,8 +28,8 @@ const Home = () => {
           This map will show you the intersecting tiles for your area of
           interest based on the dataset that is provided. On the right corner
           there are three types of drawing techniques, you can choose any of
-          them. Upon marking your aoi, the intersecting tiles will show in red
-          colour. (Dataset provided was 100 tiles near Karnataka, Hyderabad)
+          them. Upon marking your aoi, the intersecting tiles will be shown in
+          red colour. (Dataset provided was 100 tiles near Karnataka, Hyderabad)
         </p>
       </div>
       {intersections ? (
