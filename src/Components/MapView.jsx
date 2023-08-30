@@ -25,7 +25,7 @@ const MapView = () => {
    */
   const onCreatedHandler = (event) => {
     const { layer, layerType } = event;
-    layer.bindPopup("Area of Interest");
+    layer.bindPopup("Area of Interest").openPopup();
     if (
       layerType === "polygon" ||
       layerType === "circle" ||
